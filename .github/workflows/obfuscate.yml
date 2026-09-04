@@ -6,7 +6,7 @@ on:
     branches:
       - '**'  # 仅匹配分支推送，排除标签推送
     paths:
-      - '明文源吗'
+      - '明源码.js'
 
 jobs:
   build-and-obfuscate:
@@ -33,7 +33,7 @@ jobs:
           const fs = require('fs');
           const path = require('path');
           
-          const sourceFileName = '明源码';
+          const sourceFileName = '明源码.js';
           const outputFileName = '_worker.js';
           const sourceFilePath = path.join(process.cwd(), sourceFileName);
 
